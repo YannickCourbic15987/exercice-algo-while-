@@ -10,3 +10,11 @@ tab[1] = 30; // la num commence à 0 , donc ce sera 15
 //supprimer une case de mon tab
 //!tab.splice(index,nombre de valeur à partir de la valeur )
 tab.splice(3, 1);
+//! parcourir un tab avec le foreach
+let displayTab = "";
+//parameter --> value, i
+tab.forEach((item, indice) => {
+  displayTab += "la case n°" + indice + " contient la valeur " + item + "<br>";
+});
+
+document.querySelector("#result").innerHTML = displayTab;
